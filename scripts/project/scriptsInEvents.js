@@ -20,42 +20,22 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Game_events_Event61_Act2(runtime, localVars)
-	{
-		runtime.globalVars.webSocket.send("s:10")
-	},
-
-	async Game_events_Event61_Act3(runtime, localVars)
-	{
-		console.log(runtime.globalVars.Score)
-	},
-
-	async Game_events_Event64_Act4(runtime, localVars)
-	{
-		console.log(runtime.globalVars.Score)
-	},
-
-	async Game_events_Event64_Act5(runtime, localVars)
-	{
-		runtime.globalVars.webSocket.send("s:Score+ScoreBonus")
-	},
-
-	async Game_events_Event114_Act3(runtime, localVars)
-	{
-		console.log(runtime.globalVars.Score)
-	},
-
-	async Game_events_Event114_Act4(runtime, localVars)
-	{
-		runtime.globalVars.webSocket.send("s:Score+ScoreBonus")
-	},
-
 	async Game_events_Event119_Act3(runtime, localVars)
+	{
+		console.log(runtime.globalVars.finalScore)
+	},
+
+	async Game_events_Event119_Act4(runtime, localVars)
+	{
+		runtime.globalVars.webSocket.send("s:finalScore")
+	},
+
+	async Game_events_Event119_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.close();
 	},
 
-	async Game_events_Event119_Act4(runtime, localVars)
+	async Game_events_Event119_Act6(runtime, localVars)
 	{
 		window.parent.postMessage("WebSocketClosed", "*");
 	},
