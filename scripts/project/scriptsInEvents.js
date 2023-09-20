@@ -27,27 +27,27 @@ const scriptsInEvents = {
 
 	async Game_events_Event61_Act3(runtime, localVars)
 	{
-		console.log(runtime.globalVars.ScoreBonus)
+		console.log(runtime.globalVars.Score)
 	},
 
 	async Game_events_Event64_Act4(runtime, localVars)
 	{
-		console.log(runtime.globalVars.ScoreBonus)
+		console.log(runtime.globalVars.Score)
 	},
 
 	async Game_events_Event64_Act5(runtime, localVars)
 	{
-		runtime.globalVars.webSocket.send("s:ScoreBonus")
+		runtime.globalVars.webSocket.send("s:Score")
 	},
 
 	async Game_events_Event114_Act3(runtime, localVars)
 	{
-		console.log(runtime.globalVars.ScoreBonus)
+		console.log(runtime.globalVars.Score)
 	},
 
 	async Game_events_Event114_Act4(runtime, localVars)
 	{
-		runtime.globalVars.webSocket.send("s:ScoreBonus")
+		runtime.globalVars.webSocket.send("s:Score")
 	},
 
 	async Game_events_Event119_Act3(runtime, localVars)
