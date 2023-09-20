@@ -37,7 +37,7 @@ const scriptsInEvents = {
 
 	async Game_events_Event64_Act5(runtime, localVars)
 	{
-		runtime.globalVars.webSocket.send("s:Score")
+		runtime.globalVars.webSocket.send("s:Score+ScoreBonus")
 	},
 
 	async Game_events_Event114_Act3(runtime, localVars)
@@ -47,7 +47,7 @@ const scriptsInEvents = {
 
 	async Game_events_Event114_Act4(runtime, localVars)
 	{
-		runtime.globalVars.webSocket.send("s:Score")
+		runtime.globalVars.webSocket.send("s:Score+ScoreBonus")
 	},
 
 	async Game_events_Event119_Act3(runtime, localVars)
