@@ -27,7 +27,8 @@ const scriptsInEvents = {
 		let formattedScoreBonus = `s:${scoreBonus}`;
 		
 		runtime.globalVars.ScoreToSend = runtime.globalVars.ScoreToSend+scoreBonus;
-		console.log(runtime.globalVars.ScoreToSend);
+		console.log("final score to websocket: " + runtime.globalVars.ScoreToSend);
+		console.log("final player score: " + runtime.globalVars.Score);
 		
 		runtime.globalVars.webSocket.send(formattedScoreBonus);
 	},
@@ -39,6 +40,8 @@ const scriptsInEvents = {
 		let formattedScoreBonus = `s:${scoreBonus}`;
 		runtime.globalVars.ScoreToSend = runtime.globalVars.ScoreToSend+scoreBonus;
 		console.log(runtime.globalVars.ScoreToSend);
+		console.log("final score to websocket: " + runtime.globalVars.ScoreToSend);
+		console.log("final player score: " + runtime.globalVars.Score);
 		
 		runtime.globalVars.webSocket.send(formattedScoreBonus);
 	},
@@ -51,15 +54,10 @@ const scriptsInEvents = {
 
 	async Game_events_Event119_Act4(runtime, localVars)
 	{
-		console.log(runtime.globalVars.ScoreToSend);
-	},
-
-	async Game_events_Event119_Act5(runtime, localVars)
-	{
 		runtime.globalVars.webSocket.close();
 	},
 
-	async Game_events_Event119_Act6(runtime, localVars)
+	async Game_events_Event119_Act5(runtime, localVars)
 	{
 		window.parent.postMessage("WebSocketClosed", "*");
 	},

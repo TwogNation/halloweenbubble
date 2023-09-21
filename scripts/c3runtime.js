@@ -4441,7 +4441,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Game_events_Event119_Act3,
 		C3.ScriptsInEvents.Game_events_Event119_Act4,
 		C3.ScriptsInEvents.Game_events_Event119_Act5,
-		C3.ScriptsInEvents.Game_events_Event119_Act6,
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.Sprite.Acts.SetVisible,
