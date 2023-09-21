@@ -20,7 +20,7 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Game_events_Event64_Act3(runtime, localVars)
+	async Game_events_Event63_Act5(runtime, localVars)
 	{
 		let scoreBonus = runtime.globalVars.ScoreBonus;
 		
